@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+</head>
+<body>
+    <script>
+        const Dolphinsscore =[97,112,101];
+        const KoalaScore = [109,95,102];
+
+        //Tinh Diem Trung Binh
+        const Diemtb = (score) => {
+            const total= score.reduce((acc,score) => acc+score,0 );
+            return total / score.length;
+        };
+
+        const dolphintb = Diemtb(Dolphinsscore);
+        const Koalatb = Diemtb(KoalaScore);
+
+        console.log("Diem trung binh cua Dolphin",dolphintb);
+        console.log("Diem trung binh của Koala",Koalatb);
+
+        //So sanh diem tb
+        if(dolphintb > Koalatb && dolphintb >= 100){
+            console.log("Doi dolphin danh duoc cup vo dich");
+        }
+        else if(Koalatb > dolphintb && Koalatb >= 100){
+            console.log("Doi Koala danh duoc chien thang");
+        }
+        else if(Koalatb == dolphintb && dolphintb >= 100){
+            console.log("Hoa Nhau");
+        }else{
+            console.log("Khong doi nao danh chuc vo dich")
+        }
+    </script>
+</body>
+</html>
