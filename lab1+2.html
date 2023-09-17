@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supper Nonnn</title>
+</head>
+
+<body>
+    <script>
+       const john ={
+        fullname:'john wick',
+        height:1.78,
+        weight:78
+       };
+
+       const Mark ={
+        fullname:'Mark buffalo',
+        height: 1.67,
+        weight:59
+       };
+
+       const calculatorBMI = (yolo) => {
+        return yolo.weight / (yolo.height **2);
+    };
+        const MBMI = calculatorBMI(john);
+        const JBMI = calculatorBMI(Mark);
+
+        console.log('BMI cuar Mark la ',MBMI);
+        console.log('BMI cua john la',JBMI);
+
+        if(MBMI > JBMI){
+            console.log(`BMI cuar mark (${MBMI}) lon hon BMI cua jhon(${JBMI})`);
+        }else if(MBMI < JBMI){
+            console.log(`BMI cua John (${JBMI}) Lon Hon cua Mark(${MBMI})`);
+        }else{
+            console.log("Deo co cai lol gi xay ra ca");
+        }
+
+
+
+
+       /*const Mheight2 = 1.88;
+       const Mweight2 = 95;
+       const Jheight2 = 1.76;
+       const jweight2 = 85;
+
+       const MBMI2 = Mweight2 / (Mheight2 **2);
+       const JBMI2 = jweight2 / (Jheight2 **2);
+       console.log(`Chi So BMI cua Mark la ${MBMI2}`);
+       console.log(`Chi so BMI cua John la ${JBMI2}`);
+       const markHigerBMI2 = MBMI2 > JBMI2;
+       console.log(`BMI cua mark co cao hon John khong ${markHigerBMI2}`);*/
+
+    </script>
+</body>
+
+</html>
