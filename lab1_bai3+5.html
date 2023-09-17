@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,4 +59,66 @@
         }*/
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3 và bài 5</title>
+</head>
+<body>
+    <script>
+        const avgDolhins =[44, 23, 71];
+        const avgKoalas = [65, 54, 49];
+
+        //Tinh Diem Trung Binh
+        const calcAverage = (score) => {
+            const total= score.reduce((acc,score) => acc+score,0 );
+            return total / score.length;
+        };
+
+        const dolphintb = calcAverage(avgDolhins);
+        const Koalatb = calcAverage(avgKoalas);
+
+        console.log(`Diem trung binh cua Dolphin ${dolphintb}`);
+        console.log(`Diem trung binh cuar Koalatb ${Koalatb}`);
+
+        const checkWinner = (avgDolhins , avgKoalas) => {
+            if(avgDolhins >= 2 * avgKoalas){
+                console.log(`Đội Dolhins thang ( ${avgDolhins} vs Koala ${avgKoalas})`);
+            }else if(avgKoalas >=2 * avgDolhins){
+                console.log(`Doi Koala thang Dolhins (${avgKoalas} vs ${avgDolhins})`);
+            }else{
+                console.log("Khong doi nao thang cuoc");
+            }
+        };
+        //Su dung ham check Winner
+        console.log("Dữ liệu 1");
+        checkWinner(avgDolhins, avgKoalas);
+        
+        //Tinh Lai Diem trung binh cho du lieu 2
+
+        const avgDolhins2 =calcAverage([85, 54, 41]);
+        const avgKoalas2 = calcAverage([23, 34, 27]);
+
+        console.log("\n Dữ liệu 2:  ");
+        checkWinner(avgDolhins2,avgKoalas2);
+
+        //So sanh diem tb
+        /*
+        if(dolphintb > Koalatb && dolphintb >= 100){
+            console.log("Doi dolphin danh duoc cup vo dich");
+        }
+        else if(Koalatb > dolphintb && Koalatb >= 100){
+            console.log("Doi Koala danh duoc chien thang");
+        }
+        else if(Koalatb == dolphintb && dolphintb >= 100){
+            console.log("Hoa Nhau");
+        }else{
+            console.log("Khong doi nao danh chuc vo dich")
+        }*/
+    </script>
+</body>
+>>>>>>> 0c8f0b0c590607642fa78bcbd8e1feb816cf2fa1
 </html>

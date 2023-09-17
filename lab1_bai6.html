@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,4 +26,33 @@
         console.log("Tổng giá trị cho từng hóa đơn",totals);
     </SCRipt>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 6 Huynh Van Duy</title>
+</head>
+<body>
+    <SCRipt>
+        //Ham tinh tien boa
+        const calcTip = (bill) =>{
+            return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+        };
+
+        // Mang chua gia tri hoa don
+        const bills = [125,555 ,44];
+
+        //Mang chua tien boa
+        const tip = bills.map((bill) => calcTip(bill));
+
+        //Mang chua tong gia tri hoa don
+        const totals = bills.map((bill,index) => bill + tip[index]);
+
+        console.log("Tiền boa cho từng hóa đơn: ",tip);
+        console.log("Tổng giá trị cho từng hóa đơn",totals);
+    </SCRipt>
+</body>
+>>>>>>> 0c8f0b0c590607642fa78bcbd8e1feb816cf2fa1
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,4 +29,36 @@
 
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 9 Huynh Van Duy</title>
+</head>
+<body>
+    <script>
+    // Hàm để in dự báo nhiệt độ từ mảng dữ liệu
+        const printForecast = (arr) => {
+            let forecast = "";
+            for (let i = 0; i < arr.length; i++) {
+                forecast += `... ${arr[i]}°C in ${i + 1} day${i === 0 ? "" : "s"} `;
+         }
+            console.log(forecast);
+         };
+
+    // Dữ liệu thử nghiệm 1
+    const forecastData1 = [17, 21, 23];
+    console.log("Dữ liệu thử nghiệm 1:");
+    printForecast(forecastData1);
+
+    // Dữ liệu thử nghiệm 2
+    const forecastData2 = [12, 5, -5, 0, 4];
+    console.log("\nDữ liệu thử nghiệm 2:");
+    printForecast(forecastData2);
+
+    </script>
+</body>
+>>>>>>> 0c8f0b0c590607642fa78bcbd8e1feb816cf2fa1
 </html>
