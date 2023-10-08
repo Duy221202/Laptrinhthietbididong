@@ -1,4 +1,3 @@
-//Huynh Van Duy - 20062071
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -72,21 +71,21 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   loginButton: {
-    backgroundColor: 'black', // Đổi màu nền của nút Login 2 sang trắng
+    backgroundColor: 'black', 
     borderRadius: 5,
     padding: 10,
     alignItems: 'center',
   },
   loginText: {
-    fontSize: 45, // Tăng kích thước chữ "Login 1" và di chuyển lên trên
-    color: 'black', // Đặt màu đen
-    alignSelf: 'flex-start', // Đặt vị trí sang bên trái màn hình
+    fontSize: 45, 
+    color: 'black', 
+    alignSelf: 'flex-start', 
     marginBottom: 60,
-    marginTop: -60, // Di chuyển lên trên thêm
+    marginTop: -60, 
   },
   loginText2: {
-    fontSize: 24, // Tăng kích thước chữ "Login 2"
-    color: 'white', // Đổi màu cho chữ "Login 2" thành màu xanh
+    fontSize: 24, 
+    color: 'white', 
   },
   createAccount: {
     fontSize: 18,
@@ -96,3 +95,5 @@ const styles = StyleSheet.create({
 });
 
 export default LoginScreen;
+//(npm install @react-navigation/stack)
+
